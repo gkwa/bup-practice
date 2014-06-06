@@ -6,7 +6,7 @@ fi
 
 d=$(date +%Y%M%d%H%M%s)
 
-basedir=$DATA_DRIVE/$d
+basedir=$(cygpath -u $DATA_DRIVE/$d)
 
 rm -rf $basedir/d3cfrombkp
 time rsync -vaz /d/d3cfrombkp/ $basedir/d3cfrombkp
