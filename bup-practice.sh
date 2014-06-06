@@ -8,6 +8,9 @@ d=$(date +%Y%M%d%H%M%s)
 
 basedir=$(cygpath -u $DATA_DRIVE/$d)
 
+rm -rf $basedir
+mkdir -p $basedir
+
 rm -rf $basedir/d3cfrombkp
 time rsync -vaz /d/d3cfrombkp/ $basedir/d3cfrombkp
 
