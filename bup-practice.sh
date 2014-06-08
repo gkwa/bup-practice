@@ -2,6 +2,8 @@
 
 set -o errexit
 
+git --version
+
 srcpath="$(pwd)/src dir"
 srcpath="$(pwd)/srcdir"
 srcdir="$(basename "$srcpath")"
