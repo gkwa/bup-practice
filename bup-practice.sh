@@ -9,7 +9,7 @@ srcpath="$(pwd)/srcdir"
 srcdir="$(basename "$srcpath")"
 
 mkdir -p "$srcdir"
-# wget -P "$srcdir" --timestamping http://installer-bin.streambox.com/mysql-essential-5.1.52-win32.msi
+wget -P "$srcdir" --timestamping http://installer-bin.streambox.com/mysql-essential-5.1.52-win32.msi
 # (cd "$srcdir" && split -a10 -b1m mysql-essential-5.1.52-win32.msi)
 
 rm -rf "$srcdir.bup"
